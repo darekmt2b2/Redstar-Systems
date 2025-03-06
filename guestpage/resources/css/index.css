@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #001d4f;
+}
+
+/* Main Content */
+.main-content {
+    /* Ajustado según la altura del header */
+   padding-left: 60px;
+   padding-right: 60px;
+   padding-top: 10%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+.container{
+   display: none; /* Oculta el título */
+}
+
+   /* slider */
+
+       /* Contenedor del slider */
+.slider-container {
+   width: 1300px;          /* Ancho del área visible */
+   height: 500px;         /* Alto del contenedor */
+   overflow: hidden;      /* Oculta imágenes desbordadas */
+   margin: 0 auto;        /* Centrado dentro de la sección */
+   position: relative;    /* Ajuste relativo a la sección */
+   border-radius: 20px;
+}
+       
+       /* Contenedor de imágenes dentro del slider */
+.slider {
+   display: flex;
+   width: calc(1300px * 4 + 30px); /* Ancho total incluyendo márgenes */
+   animation: slide 20s infinite; /* Tiempo total de animación */
+}
+               
+       /* Estilos de cada imagen */
+.slider img {
+   width: 1900px; /* Ancho de cada imagen */
+   height: auto; /* Mantiene la proporción */
+   margin-right: 10px; /* Espacio entre imágenes */
+}
+               
+       /* Keyframes para el efecto de desplazamiento */
+@keyframes slide {
+   0% { transform: translateX(0); }                   /* Muestra la primera imagen */
+   20% { transform: translateX(0); }                  /* Mantiene la primera imagen por 3 segundos */
+                   
+   25% { transform: translateX(-1310px); }             /* Desliza la primera imagen */
+   45% { transform: translateX(-1310px); }             /* Mantiene la segunda imagen por 3 segundos */
+                   
+   50% { transform: translateX(-2620px); }            /* Desliza la segunda imagen */
+   70% { transform: translateX(-2620px); }            /* Mantiene la tercera imagen por 3 segundos */
+                   
+   75% { transform: translateX(-3930px); }            /* Desliza la tercera imagen */
+   95% { transform: translateX(-3930px); }            /* Mantiene la cuarta imagen por 3 segundos */
+                   
+   100% { transform: translateX(0); }                 /* Reinicia a la primera imagen */
+}
