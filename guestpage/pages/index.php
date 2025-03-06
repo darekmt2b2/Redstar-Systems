@@ -29,6 +29,16 @@
        
     </main>
 
+    <section id="aboutUs">
+        <h1>Sky's Never Been the Limit</h1>
+        <p>
+            Whether you're flying out of pure fun, discovering how thrilling a flight can be, or training to make the sky your second home, 
+            this is the airfield you're searching for! Our top-notch maintenance, along with effective ATC management under EASA regulations 
+            (including Regulation (EU) 2018/1139 for air traffic management), ensures a safe ground experience so you can enjoy the air by yourself!
+        </p>
+    </section>
+
+
     <div class="locationContact" id="whereAreWe">
         <h2>Contact Us</h2>
         <p>Feel free to reach out or visit us at our location.</p>

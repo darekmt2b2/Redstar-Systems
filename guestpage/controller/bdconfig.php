@@ -3,7 +3,7 @@
 $servidor = "localhost";     // Dirección del servidor, si es local, usar 'localhost'
 $usuario = "darekTFG";     // Tu usuario de la base de datos
 $contraseña = "Australia_2032"; // La contraseña de tu base de datos
-$baseDatos = "hackathonfinal";    // El nombre de la base de datos (en tu caso 'hackathon')
+$baseDatos = "redstarairways";    // El nombre de la base de datos (en tu caso 'hackathon')
  
 // Crear la conexión
 $conexion = new mysqli($servidor, $usuario, $contraseña, $baseDatos);
