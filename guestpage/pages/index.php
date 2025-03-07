@@ -8,9 +8,10 @@
 </head>
 <body>
     <?php include '../pages/topnav.php';?>
-
+    <img src="..\resources\img\airfield.jpg" alt="About Us">
+    <!--
     <main class="main-content">
-
+        
         <div class="container">
             <h1>
                 “Sky's never been the limit”
@@ -28,7 +29,7 @@
         </div>
        
     </main>
-
+    -->
     <section id="aboutUs">
         <h1>Sky's Never Been the Limit</h1>
         <p>

@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $xmlFile = "../data/participants.xml";
 
-    if (file_exists($xmlFile)) {
+    if (file_exists($xmlFile) && filesize($xmlFile) > 0) {
         $xml = simplexml_load_file($xmlFile);
     } else {
         $xml = new SimpleXMLElement("<reservations></reservations>");
@@ -19,12 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $reservation->addChild("email", htmlspecialchars($email));
     $reservation->addChild("ticket_status", $ticket_status);
 
-    // Format the XML
-    $dom = dom_import_simplexml($xml)->ownerDocument;
-    $dom->formatOutput = true;
-    $xmlFormatted = $dom->saveXML();
+    //formatting
+    $dom = new DOMDocument("1.0", "UTF-8");
+    $dom->preserveWhiteSpace = false; 
+    $dom->formatOutput = true; 
+    $dom->loadXML($xml->asXML());
 
-    file_put_contents($xmlFile, $xmlFormatted);
+    $dom->save($xmlFile);
 
     header("Location: ../pages/events.php");
     exit();
