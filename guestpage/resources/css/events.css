@@ -20,7 +20,7 @@
 
 /* activity hover*/
 .event-card:hover {
-    transform: scale(1.02);
+    transform: scale(0.99);
 }
 
 /* Heading style */
