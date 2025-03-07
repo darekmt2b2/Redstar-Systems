@@ -1,9 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <participants>
   <reservation>
     <event_id>1</event_id>
     <name>Darek Mathias</name>
     <email>darek.perez.vallejos@gmail.com</email>
-    <ticket_status>0</ticket_status>
+    <ticket_status>1</ticket_status>
   </reservation>
 </participants>
+
