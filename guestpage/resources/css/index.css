@@ -5,6 +5,10 @@
    box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: Arial, sans-serif;
    color: #001d4f;
@@ -25,10 +29,27 @@ p {
    line-height: 1.8;
 }
 
+/* Wrap the image and content box together */
+.image-container {
+   position: relative; /* To allow the content box to overlay */
+}
+
+.image-container img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
 section#aboutUs {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); /* Center the content vertically and horizontally */
    text-align: center;
-   padding: 50px 20px;
-   background-color: #e0e0e0; /* Light grey background */
+   padding: 20px;
+   max-width: 80%;
+   background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for readability */
+   border-radius: 10px;
 }
 
 section#aboutUs h1 {
@@ -42,11 +63,15 @@ section#aboutUs p {
    margin: 0 auto;
 }
 
+/* Flexbox to center locationContact and align contact-info */
 .locationContact {
    background-color: #ffffff; /* White background */
    padding: 40px 20px;
    text-align: center;
    margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .locationContact h2 {
@@ -60,9 +85,15 @@ section#aboutUs p {
    margin: 20px auto;
 }
 
-.contact-info {
+/* Contact info section aligned with iframe */
+.locationContact .contact-info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start; /* Align contact info with left side of iframe */
    font-size: 16px;
    margin-top: 30px;
+   width: 100%;
+   max-width: 800px; /* Ensure contact info is not wider than iframe */
 }
 
 .contact-info p {
@@ -71,11 +102,11 @@ section#aboutUs p {
 
 /* Map and contact info container */
 .locationContact iframe {
-   width: 100%;
-   max-width: 800px;
+   width: 800px;  /* Set a fixed width for the iframe */
    height: 400px;
    border: 0;
    margin: 20px 0;
+   max-width: 100%; /* Ensures iframe resizes on smaller screens */
 }
 
 /* Placeholder for images */
@@ -110,6 +141,7 @@ img {
    }
 
    iframe {
+       width: 100%; /* Makes the iframe responsive but keeps the aspect ratio */
        height: 300px;
    }
 }

@@ -1,5 +1,6 @@
 /* Scrollview Container */
 .scroll-container {
+    margin-top: 100px;
     width: 100%;
     height: 400px;  /* scrollbox height */ /* change later its not working*/
     overflow-y: auto;

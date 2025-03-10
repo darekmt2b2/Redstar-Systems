@@ -1,0 +1,87 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height of the screen */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 3px 10px; /* Reduced padding for an even smaller height */
+    text-align: center;
+    position: fixed; /* Make the footer fixed */
+    bottom: 0; /* Position the footer at the bottom */
+    width: 100%; /* Ensure it spans the full width of the screen */
+    z-index: 1000; /* Ensures it's always on top */
+}
+
+/* Footer Links Section */
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduced gap between columns */
+    margin-bottom: 3px; /* Adjusted margin to fit the smaller height */
+}
+
+/* Styling each column inside footer-links */
+.footer-links div {
+    max-width: 300px;
+    flex: 1;
+    padding: 3px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px; /* Further reduced font size */
+    display: block;
+    margin-bottom: 3px; /* Adjusted spacing */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+/* Logo Styling */
+.footer-links img {
+    width: 50px; /* Even smaller logo */
+    height: auto;
+    margin-top: 3px; /* Adjusted top margin for logo */
+}
+
+/* Prevent content from being overlapped by footer */
+body {
+    padding-bottom: 30px; /* Adjusted space at the bottom of the page equal to footer height */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-links a {
+        font-size: 10px; /* Smaller font for mobile */
+        margin-bottom: 3px; /* Adjusted spacing */
+    }
+}

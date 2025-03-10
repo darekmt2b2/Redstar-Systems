@@ -8,23 +8,27 @@
 </head>
 <body>
     <?php include '../pages/topnav.php';?>
-    <img src="..\resources\img\airfield.jpg" alt="About Us">
 
-    <section id="aboutUs">
-        <h1>Sky's Never Been the Limit</h1>
-        <p>
-            Whether you're flying out of pure fun, discovering how thrilling a flight can be, or training to make the sky your second home, 
-            this is the airfield you're searching for! Our top-notch maintenance, along with effective ATC management under EASA regulations 
-            (including Regulation (EU) 2018/1139 for air traffic management), ensures a safe ground experience so you can enjoy the air by yourself!
-        </p>
-    </section>
-
+    <!-- Wrap the image and content together -->
+    <div class="image-container">
+        <img src="..\resources\img\airfield.jpg" alt="About Us">
+        <section id="aboutUs">
+            <div class="content-box">
+                <h1>Sky's Never Been the Limit</h1>
+                <p>
+                    Whether you're flying out of pure fun, discovering how thrilling a flight can be, or training to make the sky your second home, 
+                    this is the airfield you're searching for! Our top-notch maintenance, along with effective ATC management under EASA regulations 
+                    (including Regulation (EU) 2018/1139 for air traffic management), ensures a safe ground experience so you can enjoy the air by yourself!
+                </p>
+            </div>
+        </section>
+    </div>
 
     <div class="locationContact" id="whereAreWe">
         <h2>Contact Us</h2>
         <p>Feel free to reach out or visit us at our location.</p>
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <p><strong>Address:</strong></p>
             <p>Top Floor, Terminal Building</p>
             <p>Grenier Drive, Archerfield Airport</p>
@@ -35,6 +39,8 @@
             <p><strong>Phone:</strong> <a href="tel:+61732758000">(07) 3275 8000</a></p>
         </div>
     </div>
+           
+    <?php include '../pages/footer.php';?>
 
 </body>
 </html>
