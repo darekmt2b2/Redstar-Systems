@@ -1,65 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #001d4f;
+/* Global Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-/* Main Content */
-.main-content {
-    /* Ajustado según la altura del header */
-   padding-left: 60px;
-   padding-right: 60px;
-   padding-top: 10%;
+body {
+   font-family: Arial, sans-serif;
+   color: #001d4f;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+}
+
+h1, h2 {
    text-align: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+   color: #003366;
+}
+
+p {
+   text-align: justify; /* Makes the text more readable */
+   margin-bottom: 20px;
+   line-height: 1.8;
+}
+
+section#aboutUs {
+   text-align: center;
+   padding: 50px 20px;
+   background-color: #e0e0e0; /* Light grey background */
+}
+
+section#aboutUs h1 {
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+
+section#aboutUs p {
+   font-size: 18px;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.locationContact {
+   background-color: #ffffff; /* White background */
+   padding: 40px 20px;
+   text-align: center;
    margin-top: 20px;
 }
 
-.container{
-   display: none; /* Oculta el título */
+.locationContact h2 {
+   font-size: 30px;
+   margin-bottom: 20px;
 }
 
-   /* slider */
+.locationContact p {
+   font-size: 18px;
+   max-width: 900px;
+   margin: 20px auto;
+}
 
-       /* Contenedor del slider */
-.slider-container {
-   width: 1300px;          /* Ancho del área visible */
-   height: 500px;         /* Alto del contenedor */
-   overflow: hidden;      /* Oculta imágenes desbordadas */
-   margin: 0 auto;        /* Centrado dentro de la sección */
-   position: relative;    /* Ajuste relativo a la sección */
-   border-radius: 20px;
+.contact-info {
+   font-size: 16px;
+   margin-top: 30px;
 }
-       
-       /* Contenedor de imágenes dentro del slider */
-.slider {
-   display: flex;
-   width: calc(1300px * 4 + 30px); /* Ancho total incluyendo márgenes */
-   animation: slide 20s infinite; /* Tiempo total de animación */
+
+.contact-info p {
+   margin: 5px 0;
 }
-               
-       /* Estilos de cada imagen */
-.slider img {
-   width: 1900px; /* Ancho de cada imagen */
-   height: auto; /* Mantiene la proporción */
-   margin-right: 10px; /* Espacio entre imágenes */
+
+/* Map and contact info container */
+.locationContact iframe {
+   width: 100%;
+   max-width: 800px;
+   height: 400px;
+   border: 0;
+   margin: 20px 0;
 }
-               
-       /* Keyframes para el efecto de desplazamiento */
-@keyframes slide {
-   0% { transform: translateX(0); }                   /* Muestra la primera imagen */
-   20% { transform: translateX(0); }                  /* Mantiene la primera imagen por 3 segundos */
-                   
-   25% { transform: translateX(-1310px); }             /* Desliza la primera imagen */
-   45% { transform: translateX(-1310px); }             /* Mantiene la segunda imagen por 3 segundos */
-                   
-   50% { transform: translateX(-2620px); }            /* Desliza la segunda imagen */
-   70% { transform: translateX(-2620px); }            /* Mantiene la tercera imagen por 3 segundos */
-                   
-   75% { transform: translateX(-3930px); }            /* Desliza la tercera imagen */
-   95% { transform: translateX(-3930px); }            /* Mantiene la cuarta imagen por 3 segundos */
-                   
-   100% { transform: translateX(0); }                 /* Reinicia a la primera imagen */
+
+/* Placeholder for images */
+img {
+   width: 100%;
+   max-width: 100%; /* Ensures responsiveness */
+   height: auto;
+   display: block;
+   margin: 0 auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+   section#aboutUs h1 {
+       font-size: 28px;
+   }
+
+   section#aboutUs p {
+       font-size: 16px;
+   }
+
+   .locationContact h2 {
+       font-size: 24px;
+   }
+
+   .locationContact p {
+       font-size: 16px;
+   }
+
+   .contact-info {
+       font-size: 14px;
+   }
+
+   iframe {
+       height: 300px;
+   }
 }

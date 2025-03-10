@@ -9,27 +9,7 @@
 <body>
     <?php include '../pages/topnav.php';?>
     <img src="..\resources\img\airfield.jpg" alt="About Us">
-    <!--
-    <main class="main-content">
-        
-        <div class="container">
-            <h1>
-                “Sky's never been the limit”
-            </h1>
-        </div>
 
-        <div class="slider-container">
-            <div class="slider">
-                <img src="assets\img\index/carousel/1.jpg" alt="Image 1">
-                <img src="assets\img\index/carousel/2.jpg" alt="Image 1">
-                <img src="assets\img\index/carousel/3.jpg" alt="Image 1">
-                <img src="assets\img\index/carousel/4.jpg" alt="Image 1">
-                <img src="assets\img\index/carousel/5.jpg" alt="Image 1">
-            </div>
-        </div>
-       
-    </main>
-    -->
     <section id="aboutUs">
         <h1>Sky's Never Been the Limit</h1>
         <p>
