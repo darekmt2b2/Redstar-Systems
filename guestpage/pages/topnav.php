@@ -14,9 +14,9 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.php" href="#aboutUs">About Us</a></li>
+            <li><a href="index.php">About Us</a></li>
             <li><a href="flight-schools.php">Flight Schools</a></li>
-            <li><a href="#whereAreWe">Where are we?</a></li>
+            <li><a href="index.php">Where are we?</a></li>
             <li><a href="events.php">Events</a></li>
             <li><a href="fleet.php">Fleet</a></li>
             <li><a href="work.php">Work for Us!</a></li>

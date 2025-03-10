@@ -8,6 +8,15 @@
 </head>
 <body>
     <?php include '../pages/topnav.php'; ?>
-    <?php include '../pages/eventsDATA.php'; ?>  
+    <?php include '../pages/eventsDATA.php'; ?> 
+    
+    <?php
+    if (isset($_GET['already_registered']) && $_GET['already_registered'] == 'true') {
+        echo '<script type="text/javascript">
+            alert("You are already registered for this event.");
+        </script>';
+    }
+    ?>
+
 </body>
 </html>
