@@ -89,20 +89,20 @@ button:hover {
     border-radius: 50%;
 }
 
-/*sign in link*/
-.signup-link {
+/*login link*/
+.login-link {
     margin-top: 10px;
     font-size: 14px;
 }
 
-.signup-link a {
+.login-link a {
     color: #e63946; /* Red accent */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     color: #d62839; /* Slightly darker red */
 }
-/*sign in link*/
+/*login link*/

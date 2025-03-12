@@ -13,8 +13,8 @@
             <h2>Login</h2>
             <form action="loginDATA.php" method="POST">
                 <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="EASA">EASA:</label>
+                    <input type="text" id="EASA" name="EASA" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
@@ -22,9 +22,10 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
+            <p class="signup-link">Don't have an account? <a href="../pages/signIn.php">Sign Up</a></p>
         </div>
         <div class="logo-container">
-            <img src="..\resources\img\redstarAW.png" alt="Logo">
+            <img src="../resources/img/redstarAW.png" alt="Logo">
         </div>
     </div>
 </body>
