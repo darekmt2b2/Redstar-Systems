@@ -22,7 +22,7 @@
             <li><a href="#contact">Contact Us!</a></li>
         </ul>
         <div class="login-btn">
-            <a href="login.php">Log in</a>
+            <a href="../pages/login.php">Log in</a>
         </div>
     </nav>
 </body>
