@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $easa = trim($_POST['EASA']);
     $password = $_POST['password'];
 
-    $sql = "SELECT id, name, password FROM users WHERE EASA = ?";
+    $sql = "SELECT id, name, password FROM user WHERE EASA = ?";
     $stmt = $conexion->prepare($sql);
     $stmt->bind_param("s", $easa);
     $stmt->execute();
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['easa'] = $easa;
 
-            header("Location: ../pages/dashboard.php"); // Redirect to user flightplans
+            header("Location: ../../userPage/pagesL/flightplan.php"); // Redirect to user flightplans
             exit();
         } else {
             header("Location: ../pages/login.php?error=invalid_password");
