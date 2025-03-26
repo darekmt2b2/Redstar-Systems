@@ -19,7 +19,7 @@ if ($row = $result->fetch_assoc()) {
     $flightPlan = json_decode($row["FLJSON"], true);
 }
 
-// If no flight plan exists, send a placeholder message
+//error handling
 if (empty($flightPlan)) {
     echo "<p>No flight plan found.</p>";
     return;
@@ -28,7 +28,7 @@ if (empty($flightPlan)) {
 
 <div id="map"></div>
 
-<!-- Leaflet CSS & JS -->
+<!-- Leaflet CSS & JS  V3.5-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
@@ -40,7 +40,7 @@ if (empty($flightPlan)) {
 </style>
 
 <script>
-    let flightPlan = <?php echo json_encode($flightPlan); ?>;
+    let flightPlan = <?php echo json_encode($flightPlan); ?>; //turns json into an array 
 
     function initMap() {
         if (!flightPlan.length) {
@@ -66,7 +66,7 @@ if (empty($flightPlan)) {
                 .openPopup();
         });
 
-        L.polyline(flightPath, { color: 'red' }).addTo(map);
+        L.polyline(flightPath, { color: 'red' }).addTo(map); //draws the line using polyline
     }
 
     document.addEventListener("DOMContentLoaded", initMap);

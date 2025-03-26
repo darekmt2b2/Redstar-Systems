@@ -9,37 +9,36 @@ body {
     background-repeat: no-repeat;
 }
 
-
+/* Main container */
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     width: 60%;
-    height: 60%;
-    background: rgba(0, 0, 0, 0.6); /* Semitransparency do not touch */
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6); /* Semitransparency */
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*  shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: white;
-    backdrop-filter: blur(10px); /* Frost */
+    backdrop-filter: blur(10px);
+    text-align: center;
 }
 
-
-/* Login Form */
+/* Form styling */
 .form-container {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
+    width: 100%;
 }
 
 .form-container h2 {
-    margin-bottom: 20px;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
     text-align: left;
+    width: 100%;
 }
 
 .form-group label {
@@ -59,6 +58,14 @@ body {
     outline: none;
 }
 
+/* File input style */
+input[type="file"] {
+    padding: 8px;
+    background: #333;
+    border: 1px solid #444;
+}
+
+/* Button styling */
 button {
     width: 100%;
     padding: 10px;
@@ -69,40 +76,26 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 button:hover {
     background: #d62839;
 }
-/*login form*/
 
-.logo-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-container img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
-
-/*sign in link*/
-.signup-link {
-    margin-top: 10px;
+/* Logout link */
+.logout-link {
+    margin-top: 15px;
     font-size: 14px;
 }
 
-.signup-link a {
-    color: #e63946; /* Red accent */
+.logout-link a {
+    color: #e63946;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
-.signup-link a:hover {
-    color: #d62839; /* Slightly darker red */
+.logout-link a:hover {
+    color: #d62839;
 }
-/*sign in link*/
