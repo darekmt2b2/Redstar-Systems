@@ -15,7 +15,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="myFlightPlans.php">My flightplans</a></li>
-            <li><a href="flight-schools.php">Request flightPlan</a></li>
+            <li><a href="flightplan.php">Request flightPlan</a></li>
             <li><a href="#contact">Maintencance</a></li>
             <li><a href="myFleet.php">My Aircraft</a></li>
         </ul>

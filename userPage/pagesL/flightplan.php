@@ -47,11 +47,5 @@ if (!isset($_SESSION['user_id'])) {
         </div>
     </div>
     
-
-    <!--
-    <button onclick="window.location.href='../pagesL/flight.php'">View Flight Requests</button>
-
-    <a href="logout.php">Logout</a>
-        -->
 </body>
 </html> 

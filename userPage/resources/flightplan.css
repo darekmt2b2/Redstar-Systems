@@ -1,102 +1,105 @@
-        body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url('../../guestpage/resources/img/king_air.png'); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    
-    /* Main container */
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        max-width: 500px;
-        background: rgba(0, 0, 0, 0.6); /* Semitransparency */
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        color: white;
-        backdrop-filter: blur(10px);
-        text-align: center;
-    }
-    
-    /* Form styling */
-    .form-container {
-        width: 100%;
-    }
-    
-    .form-container h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .form-group {
-        margin-bottom: 15px;
-        text-align: left;
-        width: 100%;
-    }
-    
-    .form-group label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    
-    .form-group input {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #222;
-        color: white;
-        outline: none;
-    }
-    
-    /* File input style */
-    input[type="file"] {
-        padding: 8px;
-        background: #333;
-        border: 1px solid #444;
-    }
-    
-    /* Button styling */
-    button {
-        width: 100%;
-        padding: 10px;
-        font-size: 18px;
-        background: #e63946;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-        margin-top: 15px;
-    }
-    
-    button:hover {
-        background: #d62839;
-    }
-    
-    /* Logout link */
-    .logout-link {
-        margin-top: 15px;
-        font-size: 14px;
-    }
-    
-    .logout-link a {
-        color: #e63946;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease-in-out;
-    }
-    
-    .logout-link a:hover {
-        color: #d62839;
-    }
-    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../guestpage/resources/img/king_air.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Form styling */
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* Form layout */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form group */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    font-weight: bold;
+    text-align: right;
+    flex: 1;
+    padding-right: 10px;
+}
+
+/* Inputs */
+.form-group input {
+    flex: 2;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    outline: none;
+}
+
+/* File input */
+input[type="file"] {
+    padding: 8px;
+    background: #333;
+    border: none;
+    color: white;
+}
+
+/* Button */
+button {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 18px;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #d62839;
+}
