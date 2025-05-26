@@ -25,7 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows === 0) {
         $sql_insert = "INSERT INTO user (name, EASA, password, mail, userType) VALUES (?, ?, ?, ?, ?)";
         $stmt_insert = $conexion->prepare($sql_insert);
-        $stmt_insert->bind_param("ssssi", $name, $easa, $hashed_password, $email, 1);
+        $userType = 1;
+        $stmt_insert->bind_param("ssssi", $name, $easa, $hashed_password, $email, $userType);
         $stmt_insert->execute();
 
         header("Location: ../pages/login.php?signup_success=true");

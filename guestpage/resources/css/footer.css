@@ -1,4 +1,4 @@
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,31 +12,32 @@ body {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures body takes full height of the screen */
+    min-height: 100vh; 
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #003366; /* Dark blue background */
+    background-color: #003366; 
     color: white;
-    padding: 3px 10px; /* Reduced padding for an even smaller height */
+    padding: 3px 10px; 
     text-align: center;
-    position: fixed; /* Make the footer fixed */
-    bottom: 0; /* Position the footer at the bottom */
-    width: 100%; /* Ensure it spans the full width of the screen */
-    z-index: 1000; /* Ensures it's always on top */
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1000; 
+
+    margin-top: 10px;
 }
 
-/* Footer Links Section */
+
 .footer-links {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5px; /* Reduced gap between columns */
-    margin-bottom: 3px; /* Adjusted margin to fit the smaller height */
+    gap: 5px; 
+    margin-bottom: 3px;
 }
 
-/* Styling each column inside footer-links */
 .footer-links div {
     max-width: 300px;
     flex: 1;
@@ -46,29 +47,29 @@ body {
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-size: 15px; /* Further reduced font size */
+    font-size: 15px; 
     display: block;
-    margin-bottom: 3px; /* Adjusted spacing */
+    margin-bottom: 3px; 
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ffcc00; /* Hover color */
+    color: #ffcc00; 
 }
 
-/* Logo Styling */
+
 .footer-links img {
-    width: 50px; /* Even smaller logo */
+    width: 50px; 
     height: auto;
-    margin-top: 3px; /* Adjusted top margin for logo */
+    margin-top: 3px; 
 }
 
-/* Prevent content from being overlapped by footer */
+
 body {
-    padding-bottom: 30px; /* Adjusted space at the bottom of the page equal to footer height */
+    padding-bottom: 30px; 
 }
 
-/* Responsive Design for smaller screens */
+
 @media screen and (max-width: 768px) {
     .footer-links {
         flex-direction: column;
@@ -81,7 +82,7 @@ body {
     }
 
     .footer-links a {
-        font-size: 10px; /* Smaller font for mobile */
-        margin-bottom: 3px; /* Adjusted spacing */
+        font-size: 10px; 
+        margin-bottom: 3px; 
     }
 }

@@ -14,12 +14,11 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#aboutUs">About Us</a></li>
-            <li><a href="flight-schools.php">Flight Schools</a></li>
-            <li><a href="#contact">Where are we?</a></li>
+            <li><a href="index.php">About Us</a></li>
+            <li><a href="flightschools.php">Flight Schools</a></li>
+            <li><a href="index.php#contact">Where are we?</a></li>
             <li><a href="events.php">Events</a></li>
-            <li><a href="fleet.php">Fleet</a></li>
-            <li><a href="#contact">Contact Us!</a></li>
+            <li><a href="index.php#contact">Contact Us!</a></li>
         </ul>
         <div class="login-btn">
             <a href="../pages/login.php">Log in</a>

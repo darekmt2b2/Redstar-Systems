@@ -16,11 +16,11 @@
         <ul class="nav-links">
             <li><a href="myFlightPlans.php">My flightplans</a></li>
             <li><a href="flightplan.php">Request flightPlan</a></li>
-            <li><a href="#contact">Maintencance</a></li>
-            <li><a href="myFleet.php">My Aircraft</a></li>
+            <li><a href="maintenance.php">Maintencance</a></li>
+            <li><a href="myAircraft.php">My Aircraft</a></li>
         </ul>
         <div class="login-btn">
-            <a href="../pages/logout.php">Log out</a>
+            <a href="../pagesL/logout.php">Log out</a>
         </div>
     </nav>
 </body>

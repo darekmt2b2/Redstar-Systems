@@ -1,8 +1,16 @@
-/* Scrollview Container */
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url('../img/king_air.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
 .scroll-container {
     margin-top: 100px;
     width: 100%;
-    height: 400px;  /* scrollbox height */ /* change later its not working*/
+    height: 400px;  
     overflow-y: auto;
     padding: 20px;
     box-sizing: border-box;
@@ -24,13 +32,13 @@
     transform: scale(0.99);
 }
 
-/* Heading style */
+
 .event-card h3 {
     margin-top: 0;
     color: #333;
 }
 
-/* reserve buttons */
+
 .btn-reserve {
     display: inline-block;
     padding: 10px 15px;

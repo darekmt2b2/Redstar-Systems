@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/king_air.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+.event-container {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+.event-card {
+    width: 1050px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trainingphoto {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.trainingphoto img {
+    width: 850px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .event-wrapper {
+        flex-direction: column;
+    }
+
+    .trainingphoto img {
+        height: auto;
+        max-height: 400px;
+    }
+}

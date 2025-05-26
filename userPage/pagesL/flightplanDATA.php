@@ -5,6 +5,9 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
+header("Cache-Control: no-cache, no-store, must-revalidate"); 
+header("Pragma: no-cache"); 
+header("Expires: 0");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_FILES["flightplan"]) && $_FILES["flightplan"]["error"] == 0) {

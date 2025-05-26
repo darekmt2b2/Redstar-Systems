@@ -5,12 +5,22 @@ include '../../guestpage/controller/bdconfig.php';
 $userId = $_SESSION["user_id"] ?? null;
 if (!$userId) {
     die("Unauthorized access.");
+    header("Location: ../../guestpage/pages/index.php");
 }
+header("Cache-Control: no-cache, no-store, must-revalidate"); 
+header("Pragma: no-cache"); 
+header("Expires: 0");
 
 // Fetch the latest flight plan
-$sql = "SELECT FLJSON FROM flightplan WHERE UserID = ? AND ID= 1";
+$flightId = $_GET['id'] ?? null;
+
+if (!is_numeric($flightId)) {
+    die("Invalid flight ID.");
+}
+
+$sql = "SELECT FLJSON FROM flightplan WHERE UserID = ? AND ID = ?";
 $stmt = $conexion->prepare($sql);
-$stmt->bind_param("i", $userId);
+$stmt->bind_param("ii", $userId, $flightId);
 $stmt->execute();
 $result = $stmt->get_result();
 
@@ -26,7 +36,6 @@ if (empty($flightPlan)) {
 }
 ?>
 
-<div id="map"></div>
 
 <!-- Leaflet CSS & JS  V3.5-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />

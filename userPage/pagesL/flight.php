@@ -8,6 +8,19 @@
 </head>
 <body>
     <?php include '../pagesL/logguedTopnav.php';?>
-    <?php include '../pagesL/flightDATA.php'; ?>
+    
+
+    <div class="container">
+        <div class="card">
+            <?php include '../pagesL/flightDATA2.php'; ?>
+        </div>
+
+        <div class="map-container">
+            <div id="map">
+                <?php include '../pagesL/flightDATA.php'; ?>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
