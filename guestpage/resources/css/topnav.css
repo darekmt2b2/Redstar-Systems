@@ -54,7 +54,7 @@ body {
 
 /* Log In Button */
 .login-btn a {
-    background: #1A87B2;
+    background: red;
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -64,7 +64,7 @@ body {
 }
 
 .login-btn a:hover {
-    background: #d48c00;
+    background: #720303;
 }
 
 /* content not hidden by topnavs */

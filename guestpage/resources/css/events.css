@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
+
 .scroll-container {
     margin-top: 100px;
     width: 100%;
@@ -16,39 +17,39 @@ body {
     box-sizing: border-box;
 }
 
-/* card css */
 .event-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    color: white; 
     margin-bottom: 15px;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
     transition: transform 0.2s ease-in-out;
 }
 
-/* activity hover*/
 .event-card:hover {
     transform: scale(0.99);
 }
 
-
 .event-card h3 {
     margin-top: 0;
-    color: #333;
+    color: white;
 }
-
 
 .btn-reserve {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: red;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .btn-reserve:hover {
-    background-color: #0056b3;
+    background-color: #8d0202;
 }

@@ -26,6 +26,8 @@
 
     <div class="locationContact" id="whereAreWe">
         <h2>Contact Us</h2>
+        <p>+61 7 3275 8000</p>
+
         <p>Feel free to reach out or visit us at our location.</p>
 
         <div class="contact-info" id="contact">

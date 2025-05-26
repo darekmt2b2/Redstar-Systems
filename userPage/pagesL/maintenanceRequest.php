@@ -15,7 +15,7 @@ header("Expires: 0");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Authorization</title>
-    <link rel="stylesheet" href="..\resources\flightplan.css"> 
+    <link rel="stylesheet" href="..\resources\maintenance.css"> 
 </head>
 <body>
     <?php include '../pagesL/logguedTopnav.php';?>

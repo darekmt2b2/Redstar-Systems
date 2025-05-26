@@ -13,36 +13,37 @@
             <div class="school-content">
                 <h3>Flylink</h3>
                 <p>We envision our students to be future teammates. Our educational philosophy assures that you will graduate with the knowledge and expertise necessary to excel as a professional pilot.</p>
-                <a href="#" class="btn-reserve">Visit Website</a>
+                <a href="https://flylinkaviation.qld.edu.au/" class="btn-reserve">Visit Website</a>
             </div>
-            <img src="../resources/img/logo1.png" alt="Logo 1" class="school-logo">
+            <img src="../resources/img/flylink.jpeg" alt="Logo 1" class="school-logo">
         </div>
 
         <div class="event-card">
             <div class="school-content">
                 <h3>Flight School 2</h3>
-                <p>Specializes in commercial pilot licensing and international certifications.</p>
-                <a href="#" class="btn-reserve">Visit Website</a>
+                <p>Flightscope Aviation is a premier flying school based in Brisbane at Archerfield Airport. Professional expertise in all aspects of flight training. An accredited flight training provider with CASA Part 141 and 142.  CASA 135/138.   RA-AUS Recreational Flight Training Facility.</p>
+                <a href="https://www.flightscopeaviation.com.au/" class="btn-reserve">Visit Website</a>
             </div>
-            <img src="../resources/img/logo2.png" alt="Logo 2" class="school-logo">
+            <img src="../resources/img/flightscope.jpg" alt="Logo 2" class="school-logo">
         </div>
 
         <div class="event-card">
             <div class="school-content">
-                <h3>Flight School 3</h3>
-                <p>Top-rated European flight academy offering courses from PPL to ATPL.</p>
-                <a href="#" class="btn-reserve">Visit Website</a>
+                <h3>Brisbane Aviators</h3>
+                <p>Have you ever wanted to fly a plane? You can with Brisbane Aviators!</p>
+                <a href="https://www.brisbaneaviators.com.au/" class="btn-reserve">Visit Website</a>
             </div>
-            <img src="../resources/img/logo3.png" alt="Logo 3" class="school-logo">
+            <img src="../resources/img/baviatiors.png" alt="Logo 3" class="school-logo">
         </div>
 
         <div class="event-card">
             <div class="school-content">
-                <h3>Flight School 4</h3>
-                <p>Known for its mountain flying training and state-of-the-art simulators.</p>
-                <a href="#" class="btn-reserve">Visit Website</a>
+                <h3>PathFinder Aviation</h3>
+                <p>Turn your dreams of flying into reality by taking part in flying lessons with PathFinder Aviation at Archerfield Airport located on the Southside of Brisbane.
+
+                <a href="https://www.pathfinderaviation.com.au/" class="btn-reserve">Visit Website</a>
             </div>
-            <img src="../resources/img/logo4.png" alt="Logo 4" class="school-logo">
+            <img src="../resources/img/pathfinder.png" alt="Logo 4" class="school-logo">
         </div>
     </div>
     <?php include '../pages/footer.php';?>
