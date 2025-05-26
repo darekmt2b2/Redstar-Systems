@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $fileTmpPath = $_FILES["flightplan"]["tmp_name"];
         $fileType = $_FILES["flightplan"]["type"];
 
-        // Validate file type
         if ($fileType == "application/json") {
             $jsonData = file_get_contents($fileTmpPath);
             $flightPlan = json_decode($jsonData, true);
@@ -23,14 +22,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 die("Invalid JSON file.");
             }
 
-            // Retrieve form data
-            $aircraftId = $_POST['aircraft_id'];
+            $registration = $_POST['aircraft_registration'];
             $date = $_POST['date'];
             $departure = trim($_POST['departure']);
             $departureRunway = $_POST['departure_runway'];
             $arrival = trim($_POST['arrival']);
             $userId = $_SESSION['user_id']; 
             $status = 0; 
+            
+            $sqlAircraft = "SELECT ID FROM aircraft WHERE Registration = ?";
+            $stmtAircraft = $conexion->prepare($sqlAircraft);
+            $stmtAircraft->bind_param("s", $registration);
+            $stmtAircraft->execute();
+            $stmtAircraft->bind_result($aircraftId);
+            $stmtAircraft->fetch();
+            $stmtAircraft->close();
 
             $sql = "INSERT INTO flightplan (Aircraft_ID, UserID, date, Departure, departureRunway, Arrival, FLJSON, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conexion->prepare($sql);
@@ -38,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmt->execute()) {
                 echo "Flight request submitted successfully!";
-                header("Location: flightRequests.php");
+                header("Location: flightplan.php");
                 exit();
             } else {
                 echo "Error: " . $stmt->error;

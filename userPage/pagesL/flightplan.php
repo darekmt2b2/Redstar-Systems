@@ -23,9 +23,9 @@ if (!isset($_SESSION['user_id'])) {
                 <h2>Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</h2>
                 <p>Request your flight authorization below:</p>
                 
-                <form action="../pages/flightplanDATA.php" method="POST" enctype="multipart/form-data">
-                    <label for="aircraft_id">Aircraft registration:</label>
-                    <input type="number" id="aircraft_id" name="aircraft_id" required>
+                <form action="../pagesL/flightplanDATA.php" method="POST" enctype="multipart/form-data">
+                    <label for="aircraft_registration">Aircraft registration:</label>
+                    <input type="text" id="aircraft_registration" name="aircraft_registration" required>
 
                     <label for="date">Flight Date:</label>
                     <input type="date" id="date" name="date" required>

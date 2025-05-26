@@ -12,10 +12,15 @@ header("Cache-Control: no-cache, no-store, must-revalidate");
 header("Pragma: no-cache"); 
 header("Expires: 0");
 
-// Fetch only the logged-in user's flight plans
-$sql = "SELECT ID, Departure, Arrival, date FROM flightplan WHERE UserID = ? ORDER BY date DESC";
+$flightId = $_GET['id'] ?? null;
+
+if (!is_numeric($flightId)) {
+    die("Invalid flight ID.");
+}
+
+$sql = "SELECT ID, Departure, Arrival, date FROM flightplan WHERE ID = ? AND UserID = ? ORDER BY date DESC";
 $stmt = $conexion->prepare($sql);
-$stmt->bind_param("i", $userId);
+$stmt->bind_param("ii", $flightId, $userId);
 $stmt->execute();
 
 $result = $stmt->get_result();
