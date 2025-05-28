@@ -63,7 +63,7 @@ Admins have access to a **grid-structured control panel** allowing simultaneous 
 
 ---
 
-## 🚀 Tech Stack
+## 💻 DEV DATA
 
 *Frontend:* 
 - HTML, CSS, JavaScript
