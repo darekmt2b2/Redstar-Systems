@@ -69,7 +69,7 @@ Admins have access to a **grid-structured control panel** allowing simultaneous 
 - HTML, CSS, JavaScript
 
 *Backend:*
-- Google Apps Script
+- Google AppScript (Used to send tickets via email)
 - Google Drive (XML + PDFs)
 - LEAFLET (for map-based route display)
 - PHP
