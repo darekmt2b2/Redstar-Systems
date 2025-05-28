@@ -1,7 +1,7 @@
 # Redstar-Systems
 Repository oriented to store documentation, data and source codeo of DAM's 2025 Final degree project
 
-# ✈️ FlightHub Web Platform
+# ✈️ Redstar
 
 Redstar Systems is a web-based CRM to manage small to mediu size airfield — all in one intuitive interface.
 
