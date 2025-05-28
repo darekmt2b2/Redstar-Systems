@@ -41,7 +41,6 @@ $sql = "
 ";
 $result = $conexion->query($sql);
 
-// Output aircraft table
 echo '
 <table>
     <thead>

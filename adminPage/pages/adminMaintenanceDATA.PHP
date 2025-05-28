@@ -8,7 +8,7 @@ if (!$userId) {
     header("Location: ../../guestpage/pages/index.php");
 }
 
-// Handle approval
+// aprove maintenance
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['approve_id'])) {
     $id = (int)$_POST['approve_id'];
     $sql = "UPDATE maintenance SET status = 1 WHERE id = ?";
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['approve_id'])) {
     $stmt->execute();
 }
 
-// Fetch data with user name
+
 $sql = "
     SELECT 
     mr.id, 
@@ -32,7 +32,6 @@ $sql = "
 ";
 $result = $conexion->query($sql);
 
-// Start output buffer if you're including this inside another template
 echo '
 <h1>Maintenance Requests</h1>
 <table>

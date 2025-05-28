@@ -96,13 +96,12 @@ button:hover {
 }
 
 .login-link a {
-    color: #e63946; /* Red accent */
+    color: #e63946; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .login-link a:hover {
-    color: #d62839; /* Slightly darker red */
+    color: #d62839; 
 }
-/*login link*/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="..\resources\logguedTopnav.css"> <!--change to relative path in order to modify design-->
+    <link rel="stylesheet" href="..\resources\logguedTopnav.css"> 
 </head>
 <body>
     <nav class="topnav">

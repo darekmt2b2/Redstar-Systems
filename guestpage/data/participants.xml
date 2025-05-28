@@ -16,24 +16,31 @@
     <event_id>1</event_id>
     <name>OMG hello</name>
     <email>dpereenc@myuax.com</email>
-    <ticket_status>0</ticket_status>
+    <ticket_status>1</ticket_status>
   </reservation>
   <reservation>
     <event_id>1</event_id>
     <name>Mathias</name>
     <email>darek.perez.vallejos@gmail.com</email>
-    <ticket_status>0</ticket_status>
+    <ticket_status>1</ticket_status>
   </reservation>
   <reservation>
     <event_id>1</event_id>
     <name>OMG hello</name>
     <email>dpereenc@myuax.com</email>
-    <ticket_status>0</ticket_status>
+    <ticket_status>1</ticket_status>
   </reservation>
   <reservation>
     <event_id>1</event_id>
     <name>carlos</name>
     <email>carlos@gmail.com</email>
-    <ticket_status>0</ticket_status>
+    <ticket_status>1</ticket_status>
+  </reservation>
+  <reservation>
+    <event_id>2</event_id>
+    <name>carlos</name>
+    <email>darek.perez.vallejos@gmail.com</email>
+    <ticket_status>1</ticket_status>
   </reservation>
 </participants>
+

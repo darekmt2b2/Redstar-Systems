@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: ../../adminPage/pages/admin.php");
                 exit();
             } elseif ($userType === 1) {
-                header("Location: ../../userPage/pagesL/flightplan.php"); // Redirect to user flightplans
+                header("Location: ../../userPage/pagesL/flightplan.php"); 
                 exit();
             }
 

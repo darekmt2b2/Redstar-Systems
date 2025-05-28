@@ -29,11 +29,14 @@ function getXmlFromDrive(fileId) {
 function generateTicketPdf(eventId, name) {
   const ticketHtml = `
     <html>
-      <body>
-        <h2>Event Ticket</h2>
-        <p><strong>Event ID:</strong> ${eventId}</p>
-        <p><strong>Name:</strong> ${name}</p>
-        <p>Your ticket is confirmed!</p>
+      <body style="font-family: Arial, sans-serif; background-color: #f5f7fa; padding: 40px;">
+        <div style="max-width: 600px; margin: auto; background-color: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h2 style="color: #333; text-align: center; border-bottom: 1px solid #e0e0e0; padding-bottom: 10px;">🎟️ Event Ticket</h2>
+          <p style="font-size: 16px; color: #555;"><strong>Event ID:</strong> ${eventId}</p>
+          <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
+          <p style="font-size: 16px; color: #2e7d32; margin-top: 20px;">✅ Your ticket is confirmed!</p>
+          <p style="font-size: 14px; color: #888; margin-top: 30px; text-align: center;">Please bring this ticket with you to the event.</p>
+        </div>
       </body>
     </html>
   `;
@@ -44,7 +47,7 @@ function generateTicketPdf(eventId, name) {
 
 function sendEmail(email, pdf) {
   const subject = "Your Event Ticket";
-  const body = "Attached is your ticket for the event. Enjoy!";
+  const body = "We're waiting for you. Enjoy!";
   MailApp.sendEmail({
     to: email,
     subject: subject,
@@ -58,3 +61,4 @@ function saveUpdatedXml(fileId, xmlDoc) {
   const file = DriveApp.getFileById(fileId);
   file.setContent(updatedXml);
 }
+

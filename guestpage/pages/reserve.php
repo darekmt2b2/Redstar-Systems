@@ -51,7 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt2->bind_param("ii", $participant_id, $event_id);
         $stmt2->execute();
     } else {
-        // Fetch the existing user's ID
         $row = $result->fetch_assoc();
         $participant_id = $row['ID'];
         

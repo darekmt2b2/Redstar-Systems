@@ -36,18 +36,15 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* activity hover*/
 .event-card:hover {
     transform: scale(0.99);
 }
 
-/* Heading style */
 .event-card h3 {
     margin-top: 0;
     color: #333;
 }
 
-/* reserve buttons */
 .btn-reserve {
     display: inline-block;
     padding: 10px 15px;

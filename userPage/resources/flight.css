@@ -41,7 +41,6 @@ nav {
     border-radius: 20px;
 }
 
-/* Optional: ensure map doesn't overflow */
 .map-container {
     flex: 1 1 600px;
     min-height: 600px;

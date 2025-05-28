@@ -9,7 +9,6 @@
 <body>
     <?php include '../pages/topnav.php';?>
 
-    <!-- Wrap the image and content together -->
     <div class="image-container">
         <img src="..\resources\img\airfield.jpg" alt="About Us">
         <section id="aboutUs">
